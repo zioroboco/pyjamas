@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "storybook": "start-storybook",
     "test": "jest",
     "static": "yarn compile && yarn lint && yarn format",
     "lint": "tslint --project .",
