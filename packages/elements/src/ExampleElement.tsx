@@ -1,6 +1,12 @@
-import { colours } from "@pyjamas/tokens"
+import { colours, fonts } from "@pyjamas/tokens"
 import * as React from "react"
 
-export const ExampleElement = () => (
-  <div style={{ color: colours.negative }}>@</div>
+export type Props = React.PropsWithChildren<{
+  colour: keyof typeof colours
+}>
+
+export const ExampleElement: React.FunctionComponent<Props> = props => (
+  <span style={{ color: colours[props.colour], fontSize: fonts.size.big }}>
+    {props.children}
+  </span>
 )
