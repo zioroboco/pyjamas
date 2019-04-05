@@ -8,7 +8,5 @@
     "module": "commonjs",
     "baseUrl": ".",
     "paths": { "@pyjamas/*": ["packages/*/src"] }
-  },
-  "include": ["**/*"],
-  "exclude": ["**/node_modules"]
+  }
 }
