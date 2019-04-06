@@ -9,7 +9,7 @@
     "static": "yarn compile && yarn lint && yarn format",
     "lint": "tslint --project .",
     "format": "prettier --check **/*.{ts,tsx}",
-    "compile": "tsc --noEmit --project ."
+    "compile": "yarn workspaces run tsc --noEmit"
   },
   "dependencies": {
     "@types/jest": "^24.0.11",
