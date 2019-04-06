@@ -5,19 +5,24 @@
   "main": "src",
   "scripts": {},
   "peerDependencies": {
+    "@emotion/core": "^10.0.0",
     "@pyjamas/tokens": "*",
-    "react": ">=16"
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@pyjamas/tokens": "*",
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
-    "@pyjamas/tokens": "*",
+    "@emotion/babel-preset-css-prop": "^10.0.9",
     "@storybook/react": "^5.0.6",
     "@types/react": "^16.8.12",
     "@types/storybook__react": "^4.0.1",
     "babel-loader": "^8.0.5",
-    "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }
 }
