@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "reset": "./scripts/reset.sh",
     "storybook": "start-storybook",
     "test": "jest",
     "static": "yarn compile && yarn lint && yarn format",
