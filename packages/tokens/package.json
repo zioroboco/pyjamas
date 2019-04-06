@@ -1,7 +1,7 @@
 {
   "name": "@pyjamas/tokens",
   "version": "0.0.0",
-  "module": "src",
+  "main": "src",
   "scripts": {},
   "dependencies": {}
 }
