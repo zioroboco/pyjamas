@@ -1,0 +1,6 @@
+{
+  "transitions": {
+    "fast": "all 0.4s ease",
+    "slow": "all 1.2s ease"
+  }
+}
