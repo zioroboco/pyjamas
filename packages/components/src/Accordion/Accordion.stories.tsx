@@ -29,3 +29,9 @@ storiesOf("Accordion", module)
       <AccordionContent>{strings.content}</AccordionContent>
     </Accordion>
   ))
+  .add("With a11y violation", () => (
+    <Accordion>
+      <AccordionTitle colour="positive">{strings.title}</AccordionTitle>
+      <AccordionContent>{strings.content}</AccordionContent>
+    </Accordion>
+  ))
