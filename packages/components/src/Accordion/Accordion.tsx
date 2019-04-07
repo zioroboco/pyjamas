@@ -1,4 +1,3 @@
-import { css, jsx } from "@emotion/core"
 import { colours, transitions } from "@pyjamas/tokens"
 import * as React from "react"
 
@@ -27,11 +26,11 @@ export const AccordionTitle: Component<{
   toggle?: () => void
   colour?: keyof typeof colours
 }> = props => {
-  const colour = css({
+  const colour = {
     color: props.colour ? colours[props.colour] : undefined
-  })
+  }
   return (
-    <h1 css={colour} onClick={props.toggle}>
+    <h1 style={colour} onClick={props.toggle}>
       {props.children}
     </h1>
   )
@@ -41,11 +40,13 @@ export const AccordionContent: Component<{
   visible?: boolean
   transition?: keyof typeof transitions
 }> = props => {
-  const transition = css({
+  const transition = {
     transition: props.transition
       ? transitions[props.transition]
       : transitions.fast
-  })
-  const visible = (expanded = false) => css({ opacity: expanded ? 1 : 0 })
-  return <p css={[transition, visible(props.visible)]}>{props.children}</p>
+  }
+  const visible = (expanded = false) => ({ opacity: expanded ? 1 : 0 })
+  return (
+    <p style={{ ...transition, ...visible(props.visible) }}>{props.children}</p>
+  )
 }

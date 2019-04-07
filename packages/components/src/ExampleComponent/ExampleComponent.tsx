@@ -6,12 +6,11 @@ export type Props = React.PropsWithChildren<{
   colour: keyof typeof colours
 }>
 
-const stylesheet = (props: Props) =>
-  css({
-    color: colours[props.colour],
-    fontSize: fonts.size.big
-  })
+const stylesheet = (props: Props) => ({
+  color: colours[props.colour],
+  fontSize: fonts.size.big
+})
 
 export const ExampleComponent: React.FunctionComponent<Props> = props => (
-  <span css={stylesheet(props)}>{props.children}</span>
+  <span style={stylesheet(props)}>{props.children}</span>
 )
