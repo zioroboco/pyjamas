@@ -4,7 +4,7 @@
   "private": true,
   "main": "src",
   "scripts": {
-    "demo": "yarn webpack && open index.html"
+    "demo": "rm -rf dist && yarn webpack && open index.html"
   },
   "dependencies": {
     "@babel/core": "^7.4.3",
