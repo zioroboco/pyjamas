@@ -13,4 +13,5 @@ clean() {
 
 find $root_dir -maxdepth 1 -name "node_modules" | clean
 find $root_dir -maxdepth 3 -name "node_modules" | clean
+find $root_dir -maxdepth 3 -name "elm-stuff" | clean
 yarn
