@@ -28,17 +28,18 @@ update msg model =
 view model =
     let
         props colour =
-            encode 0 <|
-                object
-                    [ ( "colour", string colour ) ]
+            attribute "data-props" <|
+                encode 0 <|
+                    object
+                        [ ( "colour", string colour ) ]
     in
     div []
         [ Html.node "x-example"
-            [ onClick Decrement, attribute "data-props" (props "negative") ]
+            [ onClick Decrement, props "negative" ]
             [ text "-" ]
         , div []
             [ text (String.fromInt model) ]
         , Html.node "x-example"
-            [ onClick Increment, attribute "data-props" (props "positive") ]
+            [ onClick Increment, props "positive" ]
             [ text "+" ]
         ]
