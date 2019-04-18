@@ -1,0 +1,27 @@
+{
+  "name": "@demos/elm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "src",
+  "scripts": {
+    "demo": "yarn webpack && open index.html"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@emotion/babel-preset-css-prop": "^10.0.9",
+    "@emotion/core": "^10.0.10",
+    "@pyjamas/components": "*",
+    "@pyjamas/tokens": "*",
+    "@types/webpack": "^4.4.27",
+    "babel-loader": "^8.0.5",
+    "backstitch": "^0.1.1",
+    "elm": "^0.19.0-bugfix6",
+    "elm-webpack-loader": "^5.0.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
