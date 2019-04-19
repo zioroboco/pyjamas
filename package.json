@@ -6,7 +6,9 @@
     "packages/*"
   ],
   "scripts": {
-    "demo": "yarn workspace @demos/elm demo",
+    "demo-elm": "yarn build && yarn workspace @demo/elm demo --open",
+    "demo-react": "yarn build && yarn workspace @demo/react demo --open",
+    "build": "yarn workspace @pyjamas/primitives stencil build",
     "elm": "cd demos/elm && ../../node_modules/.bin/elm",
     "reset": "./scripts/reset.sh",
     "storybook": "start-storybook",

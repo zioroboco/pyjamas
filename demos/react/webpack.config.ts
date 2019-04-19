@@ -14,20 +14,11 @@ const config: Configuration = {
             presets: ["@babel/preset-typescript", "@babel/preset-react"]
           }
         }
-      },
-      {
-        test: /\.elm$/,
-        exclude: [/elm-stuff/, /node_modules/],
-        use: [
-          {
-            loader: "elm-webpack-loader"
-          }
-        ]
       }
     ]
   },
   resolve: {
-    extensions: [".json", ".js", ".jsx", ".ts", ".tsx", ".elm"]
+    extensions: [".json", ".js", ".jsx", ".ts", ".tsx"]
   },
   plugins: [new HtmlWebpackPlugin()]
 }
